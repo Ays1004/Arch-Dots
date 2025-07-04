@@ -1,0 +1,90 @@
+/* ----------- 💫 Minimal Black & White Theme (Original Icons) 💫 -------- */
+/* wallust-wlogout */
+
+/* Importing wallust colors (optional, can be removed if unused) */
+@import '../../.config/waybar/wallust/colors-waybar.css';
+
+window {
+    font-size: 20pt;
+    color: #ffffff; /* White text */
+    background-color: rgba(0, 0, 0, 0.8); /* Dark transparent background */
+}
+
+button {
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 24%;
+    background-color: transparent;
+    border-radius: 60px;
+    border: 2px solid #ffffff;
+    transition: background-size 0.2s ease, transform 0.2s ease;
+    margin:5px;
+    outline: none;
+}
+
+button:focus {
+    background-size: 24%;
+    outline: none;
+}
+
+button:hover {
+    background-color: transparent;
+    background-color: rgba(255, 255, 255, 0.05);
+	
+}
+
+
+/* Optional: if text is inside buttons */
+button span {
+    font-size: 1em;
+    color: #ffffff;
+}
+
+/* === Icon Assignments (using your original colorful icons) === */
+#lock {
+    background-image: image(url("./icons/lock.png"));
+    background-size: 24%;
+}
+#lock:hover {
+    background-size: 30%;
+}
+
+#logout {
+    background-image: image(url("./icons/logout.png"));
+    
+}
+#logout:hover {
+    background-size: 30%;
+}
+
+#suspend {
+    background-image: image(url("./icons/suspend.png"));
+    
+}
+#suspend:hover {
+    background-size: 30%;
+}
+
+#shutdown {
+    background-image: image(url("./icons/shutdown.png"));
+    
+}
+#shutdown:hover {
+    background-size: 30%;
+}
+
+#reboot {
+    background-image: image(url("./icons/reboot.png"));
+    
+}
+#reboot:hover {
+    background-size: 30%;
+}
+
+#hibernate {
+    background-image: image(url("./icons/hibernate.png"));
+    
+}
+#hibernate:hover {
+    background-size: 30%;
+}
